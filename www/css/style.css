@@ -1,0 +1,134 @@
+:root{
+    --branco: #ffff;
+    --gelo: #f1f1f1;
+    --verde: #19c463;
+    --preto: #2a2a2a;
+    --amarelo: #ffff00;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    font-family: "Bebas Neue", sans-serif;
+}
+.toolbar{
+    height: 80px;
+}
+
+.tab-link{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.toolbar-inner .link{    
+    flex:1;
+    height: 80px;  
+    line-height: 25px; 
+	font-weight:bold;    
+    color: var(--amarelo);
+}
+
+.toolbar-inner{
+    background: var(--branco) ;
+    border-top: 1px solid var(--gelo);
+}
+
+.toolbar-inner .link:not(.active){
+    color: var(--preto);
+	font-weight:normal;
+}
+
+.toolbar-inner > .link i{
+    font-size: 28px;
+}
+
+.top-nav{
+    width: 100%;
+    height: 60px;
+    background: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.title-logo{
+    font-weight: 600;
+    margin-left: 5%;
+}
+
+.title-logo span{
+    color: var(--amarelo);
+}
+/*sacola de compras */
+.btn-card{
+    width: 40px;
+    height: 40px;
+    background: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+    border-radius: 50%;
+    border: 1px solid var(--gelo);
+    font-size: 24px;
+    color: var(--preto);
+
+
+}
+/* balão sacola de compras */
+.btn-card::before{
+    content: attr(data-count);
+    background: var(--amarelo);
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: var(--branco);
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    margin-right: 5%;
+}
+
+.btn-card[data-count="0"]::before{
+    display: none;
+}
+
+a{
+    color: var(--amarelo);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+form{
+    padding-top: 10px;
+    background: var(--branco);
+    padding-bottom: 20px;
+    position: relative;
+}
+
+input[type="text"]{
+    width: 90%;
+    height: 45px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px 20px;
+    background: var(--gelo);
+
+}
+
+::placeholder{
+    color: #b3afaf;
+}
+
+.icone-busca{
+    position: absolute;
+    top: 0px;
+    right: 5%;
+    font-size: 27px;
+    padding: 13px;
+}
