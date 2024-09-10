@@ -30,6 +30,59 @@ var app = new Framework7({
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
+    $.getScript('js/script.js');
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoplay: true,
+      delay: 3000,
+      loop: true,
+      breakpoints:{
+        50:{
+          slidesPerView: 1,
+          spaceBetween: 30
+        },
+        640:{
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        992:{
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        1200:{
+          slidesPerView: 4,
+          spaceBetween: 30
+        }
+      }  
+    });
+    
+    var swiper2 = new Swiper(".categorias", {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      freeMode: true,
+      loop: true,
+      50:{
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      640:{
+        slidesPerView: 6,
+        spaceBetween: 30
+      },
+      992:{
+        slidesPerView: 8,
+        spaceBetween: 30
+      },
+      1200:{
+        slidesPerView: 12,
+        spaceBetween: 30
+      }
+    });
+  
+
+    
 		},
 		pageBeforeRemove: function (event, page) {
 		// fazer algo antes da página ser removida do DOM

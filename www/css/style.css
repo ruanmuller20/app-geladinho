@@ -3,7 +3,7 @@
     --gelo: #f1f1f1;
     --verde: #19c463;
     --preto: #2a2a2a;
-    --amarelo: #ffff00;
+    --laranja: #ffa500;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -26,7 +26,7 @@ body{
     height: 80px;  
     line-height: 25px; 
 	font-weight:bold;    
-    color: var(--amarelo);
+    color: var(--laranja);
 }
 
 .toolbar-inner{
@@ -59,7 +59,7 @@ body{
 }
 
 .title-logo span{
-    color: var(--amarelo);
+    color: var(--laranja);
 }
 /*sacola de compras */
 .btn-card{
@@ -80,7 +80,7 @@ body{
 /* balão sacola de compras */
 .btn-card::before{
     content: attr(data-count);
-    background: var(--amarelo);
+    background: var(--laranja);
     width: 17px;
     height: 17px;
     border-radius: 50%;
@@ -99,7 +99,7 @@ body{
 }
 
 a{
-    color: var(--amarelo);
+    color: var(--laranja);
     font-weight: 600;
     text-decoration: none;
 }
@@ -132,3 +132,49 @@ input[type="text"]{
     font-size: 27px;
     padding: 13px;
 }
+
+.page-content{
+    background: var(--branco);
+}
+/* Fluação das imagens do topo */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .img-fluid{
+    max-width: 100%;
+  }
+
+  .block{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+/* Fluação dos botões da categoria */
+  .filter-btn{
+    width: 100%;
+    height: 35px;
+    background: none;
+    border: 2px solid var(--preto);
+    border-radius: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis ;
+  }
