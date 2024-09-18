@@ -183,6 +183,13 @@ input[type="text"]{
     text-overflow: ellipsis ;
   }
 
+  .filter-btn.active{
+    background: var(--laranja);
+    color: var(--branco);
+    border: none;
+  }
+
+
   /*Produtos */
 
   .row{
