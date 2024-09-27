@@ -224,6 +224,7 @@ input[type="text"]{
 
  }
 
+
  .img-container img{
     max-width: 150px;
     object-fit: cover;
@@ -256,3 +257,6 @@ input[type="text"]{
     }
 }
 
+.gelo{
+    background: var(--gelo) !important;
+}

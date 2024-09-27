@@ -1,0 +1,183 @@
+[
+    {
+        "id": 1,
+        "imagem": "img/abacate.png",
+        "nome": "Abacate",
+        "principal_caracteristica": "Cremoso",
+        "rating": 4.9,
+        "likes": "99%",
+        "reviews": 25,
+        "descricao": "Experimente o melhor geladinho caseiro da fruta, tendo sua composição 100% ao leite e sabor garantido.",
+        "detalhes": [
+            {
+                "caracteristica": "Saboroso",
+                "detalhes": "Melhor sabor do mercado"
+            },
+            {
+                "caracteristica": "Cremoso",
+                "detalhes": "Composição 100% ao leite, sem utilização de água"
+            },
+            {
+                "caracteristica": "Barato",
+                "detalhes": "Preços acessíveis para todos"
+            },
+            {
+                "caracteristica": "Natural",
+                "detalhes": "Geladinho feito com frutas naturais"
+            }
+        ],
+        "preco": 2.99,
+        "preco_promocional": 2.49
+    },
+    {
+        "id": 2,
+        "imagem": "img/amendoim.png",
+        "nome": "Amendoim",
+        "principal_caracteristica": "Feito da fruta",
+        "rating": 4.8,
+        "likes": "97%",
+        "reviews": 15,
+        "descricao": "Experimente o melhor geladinho caseiro da fruta, tendo sua composição 100% ao leite e sabor garantido.",
+        "detalhes": [
+            {
+                "caracteristica": "Saboroso",
+                "detalhes": "Melhor sabor do mercado"
+            },
+            {
+                "caracteristica": "Cremoso",
+                "detalhes": "Composição 100% ao leite, sem utilização de água"
+            },
+            {
+                "caracteristica": "Barato",
+                "detalhes": "Preços acessíveis para todos"
+            },
+            {
+                "caracteristica": "Natural",
+                "detalhes": "Geladinho feito com frutas naturais"
+            }
+           
+        ],
+        "preco": 2.99,
+        "preco_promocional": 2.49
+    },
+    {
+        "id": 3,
+        "imagem": "img/coco.png",
+        "nome": "Coco",
+        "principal_caracteristica": "Composição ao leite",
+        "rating": 4.9,
+        "likes": "99%",
+        "reviews": 25,
+        "descricao": "Experimente o melhor geladinho caseiro da fruta, tendo sua composição 100% ao leite e sabor garantido.",
+        "detalhes": [
+            {
+                "caracteristica": "Saboroso",
+                "detalhes": "Melhor sabor do mercado"
+            },
+            {
+                "caracteristica": "Cremoso",
+                "detalhes": "Composição 100% ao leite, sem utilização de água"
+            },
+            {
+                "caracteristica": "Barato",
+                "detalhes": "Preços acessíveis para todos"
+            },
+            {
+                "caracteristica": "Natural",
+                "detalhes": "Geladinho feito com frutas naturais"
+            }
+        ],
+        "preco": 2.99,
+        "preco_promocional": 2.49
+    },
+    {
+        "id": 4,
+        "imagem": "img/cupuacu.png",
+        "nome": "Cupuacu",
+        "principal_caracteristica": "Sabor da Fruta",
+        "rating": 4.6,
+        "likes": "94%",
+        "reviews": 30,
+        "descricao": "Experimente o melhor geladinho caseiro da fruta, tendo sua composição 100% ao leite e sabor garantido.",
+        "detalhes": [
+            {
+                "caracteristica": "Saboroso",
+                "detalhes": "Melhor sabor do mercado"
+            },
+            {
+                "caracteristica": "Cremoso",
+                "detalhes": "Composição 100% ao leite, sem utilização de água"
+            },
+            {
+                "caracteristica": "Barato",
+                "detalhes": "Preços acessíveis para todos"
+            },
+            {
+                "caracteristica": "Natural",
+                "detalhes": "Geladinho feito com frutas naturais"
+            }
+        ],
+        "preco": 2.99,
+        "preco_promocional": 2.49
+    },
+    {
+        "id": 5,
+        "imagem": "img/iorgute_nutela.png",
+        "nome": "Iorgute com Nutella",
+        "principal_caracteristica": "Recheado com Nutella",
+        "rating": 4.9,
+        "likes": "99%",
+        "reviews": 30,
+        "descricao": "Experimente o melhor geladinho recheado com nutella, tendo preço acessível e sabor garantido.",
+        "detalhes": [
+            {
+                "caracteristica": "Saboroso",
+                "detalhes": "Melhor sabor do mercado"
+            },
+            {
+                "caracteristica": "Cremoso",
+                "detalhes": "Composição 100% ao leite, sem utilização de água"
+            },
+            {
+                "caracteristica": "Barato",
+                "detalhes": "Preços acessíveis para todos"
+            },
+            {
+                "caracteristica": "Nutella",
+                "detalhes": "Geladinho feito com nutella"
+            }
+        ],
+        "preco": 3.99,
+        "preco_promocional": 3.00
+    },
+    {
+        "id": 6,
+        "imagem": "img/maracuja.png",
+        "nome": "Maracujá",
+        "principal_caracteristica": "Saboroso",
+        "rating": 4.7,
+        "likes": "96%",
+        "reviews": 30,
+        "descricao": "Experimente o melhor geladinho caseiro da fruta, tendo sua composição 100% ao leite e sabor garantido.",
+        "detalhes": [
+            {
+                "caracteristica": "Saboroso",
+                "detalhes": "Melhor sabor do mercado"
+            },
+            {
+                "caracteristica": "Cremoso",
+                "detalhes": "Composição 100% ao leite, sem utilização de água"
+            },
+            {
+                "caracteristica": "Barato",
+                "detalhes": "Preços acessíveis para todos"
+            },
+            {
+                "caracteristica": "Natural",
+                "detalhes": "Geladinho feito com frutas naturais"
+            }
+        ],
+        "preco": 2.99,
+        "preco_promocional": 2.49
+    }
+]

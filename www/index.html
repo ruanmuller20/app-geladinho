@@ -10,7 +10,7 @@
     <!-- Color theme for statusbar (Android only) -->
     <meta name="theme-color" content="#2196f3">
     <!-- Your app title -->
-    <title>Template Tab</title>
+    <title>Geladinho da Ilha</title>
     <!-- Path to Framework7 Library Bundle CSS -->
     <link rel="stylesheet" href="lib/framework7-bundle.min.css">
     <!-- CSS PERSONALIZADO PARA MENU-->
@@ -33,7 +33,7 @@
         <div class="view view-main">
 
             <!-- TAB BAR-->
-            <div class="toolbar toolbar-bottom">
+            <div id="menuPrincipal" class="toolbar toolbar-bottom">
                 <div class="toolbar-inner display-flex">
                     <a href="/index/" class="tab-link link active">
                         <i class="ri-home-5-line"></i>
@@ -129,107 +129,92 @@
                           </div>
 
                           <div id="produtos" class=" row margin-top display-flex align-items-center justify-content-start">
-                            
-                            <!--ITEM CARD-->
-                           <div class="item-card">
-                              <a href="/detalhes/" class="item">
-                                <div class="img-container">
-                                  <img src="img/abacate.png">
-                                </div>
-                                <div class="nome-rating">
-                                  <span class="color-gray">Abacate</span>
-                                  <span class="bold margin-right">
-                                    <i class="mdi mdi-star"></i>
-                                    5.0
-                                  </span>
-                                </div>
-                                <div class="price">R$ 2,00</div>
-                              </a>
-                           </div>
-                            <!--ITEM CARD-->
-                            <div class="item-card">
-                              <a href='#' class="item">
-                                <div class="img-container">
-                                  <img src="img/amendoim.png">
-                                </div>
-                                <div class="nome-rating">
-                                  <span class="color-gray">Amendoim</span>
-                                  <span class="bold margin-right">
-                                    <i class="mdi mdi-star"></i>
-                                    5.0
-                                  </span>
-                                </div>
-                                <div class="price">R$ 2,00</div>
-                              </a>
-                           </div>
-                            <!--ITEM CARD-->
-                            <div class="item-card">
-                              <a href="#" class="item">
-                                <div class="img-container">
-                                  <img src="img/cupuacu.png">
-                                </div>
-                                <div class="nome-rating">
-                                  <span class="color-gray">Cupuaçu</span>
-                                  <span class="bold margin-right">
-                                    <i class="mdi mdi-star"></i>
-                                    5.0
-                                  </span>
-                                </div>
-                                <div class="price">R$ 2,00</div>
-                              </a>
-                           </div>
-                            <!--ITEM CARD-->
-                            <div class="item-card">
-                              <a href="#" class="item">
-                                <div class="img-container">
-                                  <img src="img/maracuja.png">
-                                </div>
-                                <div class="nome-rating">
-                                  <span class="color-gray">Maracujá</span>
-                                  <span class="bold margin-right">
-                                    <i class="mdi mdi-star"></i>
-                                    5.0
-                                  </span>
-                                </div>
-                                <div class="price">R$ 2,00</div>
-                              </a>
-                           </div>
-                           <!--ITEM CARD-->
-                           <div class="item-card">
-                            <a href="#" class="item">
-                              <div class="img-container">
-                                <img src="img/coco.png">
+                              <!--ITEM SKELETON-->
+                              <div class="item-card">
+                                <a href="/detalhes/" class="item">
+                                  <div class="img-container skeleton-effect-wave">
+                                  
+                                  </div>
+                                  <div class="nome-rating">
+                                      <span style="margin-right: auto; width: 90px;" 
+                                            class="gelo skeleton-effect-wave skeleton-block color-gray"></span>
+                                      <span style="width: 20px; margin-right: 5px;" 
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                      <span style="width: 30px; margin-right: 15px;" 
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                  
+                                  </div>
+                                  <div class="price">
+                                    <span style="margin-top: 5px; height: 20px; width: 60px;" 
+                                          class="gelo skeleton-effect-wave skeleton-block"></span>
+                                  </div>
+                                </a>
                               </div>
-                              <div class="nome-rating">
-                                <span class="color-gray">Coco</span>
-                                <span class="bold margin-right">
-                                  <i class="mdi mdi-star"></i>
-                                  5.0
-                                </span>
+                              <!--ITEM SKELETON-->
+                              <div class="item-card">
+                                <a href="/detalhes/" class="item">
+                                  <div class="img-container skeleton-effect-wave">
+                                   
+                                  </div>
+                                  <div class="nome-rating">
+                                       <span style="margin-right: auto; width: 90px;" 
+                                            class="gelo skeleton-effect-wave skeleton-block color-gray"></span>
+                                      <span style="width: 20px; margin-right: 5px;" 
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                      <span style="width: 30px; margin-right: 15px;" 
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                   
+                                  </div>
+                                  <div class="price">
+                                    <span style="margin-top: 5px; height: 20px; width: 60px;" 
+                                          class="gelo skeleton-effect-wave skeleton-block"></span>
+                                  </div>
+                                </a>
                               </div>
-                              <div class="price">R$ 2,00</div>
-                            </a>
-                           </div>
-                           <!--ITEM CARD-->
-                           <div class="item-card">
-                            <a href="#" class="item">
-                              <div class="img-container">
-                                <img src="img/iorgute_nutela.png">
+                              <!--ITEM SKELETON-->
+                              <div class="item-card">
+                                <a href="/detalhes/" class="item">
+                                  <div class="img-container skeleton-effect-wave">
+                                   
+                                  </div>
+                                  <div class="nome-rating">
+                                       <span style="margin-right: auto; width: 90px;" 
+                                            class="gelo skeleton-effect-wave skeleton-block color-gray"></span>
+                                      <span style="width: 20px; margin-right: 5px;" 
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                      <span style="width: 30px; margin-right: 15px;" 
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                   
+                                  </div>
+                                  <div class="price">
+                                    <span style="margin-top: 5px; height: 20px; width: 60px;" 
+                                          class="gelo skeleton-effect-wave skeleton-block"></span>
+                                  </div>
+                                </a>
                               </div>
-                              <div class="nome-rating">
-                                <span class="color-gray">Iorgute com Nutella</span>
-                                <span class="bold margin-right">
-                                  <i class="mdi mdi-star"></i>
-                                  5.0
-                                </span>
+                              <!--ITEM SKELETON-->
+                              <div class="item-card">
+                                <a href="/detalhes/" class="item">
+                                  <div class="img-container skeleton-effect-wave">
+                                   
+                                  </div>
+                                  <div class="nome-rating">
+                                       <span style="margin-right: auto; width: 90px;" 
+                                            class="gelo skeleton-effect-wave skeleton-block color-gray"></span>
+                                      <span style="width: 20px; margin-right: 5px;" 
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                      <span style="width: 30px; margin-right: 15px;" 
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                   
+                                  </div>
+                                  <div class="price">
+                                    <span style="margin-top: 5px; height: 20px; width: 60px;" 
+                                          class="gelo skeleton-effect-wave skeleton-block"></span>
+                                  </div>
+                                </a>
                               </div>
-                              <div class="price">R$ 2,50</div>
-                            </a>
-                           </div>
-                           
+                             
                           
-                            
-                        
                           </div>
 
                     </div>
@@ -244,6 +229,7 @@
     <!-- Roteamento do app-->
     <script type="text/javascript" src="js/routes.js"></script>
     <script src="cordova.js"></script>
+    
 </body>
 
 </html>
