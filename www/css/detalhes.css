@@ -9,11 +9,12 @@
 .prod-detail{
     background: var(--gelo);
     width: 100%;
-    height: 350px;
+    height: 420px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    
 }
 
 .prod-detail img{
@@ -27,6 +28,7 @@
     top: 20px;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .buttons-top a{
@@ -40,6 +42,7 @@
     color: var(--preto);
     border: 1px solid var(--branco);
     font-size: 18px;
+    
 }
 
 .buttons-top a:first-child{
@@ -60,6 +63,7 @@
     border-top-left-radius: 20px;
     position: relative;
     z-index: 99;
+    
 }
 
 .line{
@@ -102,6 +106,7 @@
 
 .color-gray{
     color: gray;
+   
 }
 
 table{
@@ -111,7 +116,7 @@ table{
 }
 
 th, td{
-    padding: 1px;
+    padding: 10px 5px;
     text-align: center;
     border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd;
@@ -119,7 +124,8 @@ th, td{
 }
 
 th{
-    background-color: #ddd;
+    background-color: #ebebeb;
+    padding: 10px 0px;
 }
 
 .flex-40{
@@ -149,4 +155,6 @@ th{
     cursor: pointer;
     font-size: 18px;
     font-weight: 800;
+    
+
 }

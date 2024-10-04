@@ -36,6 +36,13 @@ fetch('js/backend.json')
      
          $("#produtos").append(produtoHTML)
          });
+
+
+         $('.item').on('click', function (){
+            var id = $(this).attr('data-id');
+            localStorage.setItem('detalhe', id);
+            app.views.main.router.navigate('/detalhes/');
+         });
      
     }, 1000);
 
