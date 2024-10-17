@@ -50,3 +50,12 @@ fetch('js/backend.json')
 
 })
 .catch(error => console.log('Erro ao fazer fetch dos dados: '+ error));
+
+//quantidade de items no carrinho
+
+setTimeout(() => {
+    var carrinho = JSON.parse(localStorage.getItem('carrinho'));
+
+    $('.btn-card').attr('data-count', carrinho.length);
+
+}, 300);

@@ -179,5 +179,65 @@
         ],
         "preco": 2.99,
         "preco_promocional": 2.49
+    },
+    {
+        "id": 6,
+        "imagem": "img/milhoverde.png",
+        "nome": "Milho Verde",
+        "principal_caracteristica": "Saboroso",
+        "rating": 4.7,
+        "likes": "96%",
+        "reviews": 30,
+        "descricao": "Experimente o melhor geladinho caseiro da fruta, tendo sua composição 100% ao leite e sabor garantido.",
+        "detalhes": [
+            {
+                "caracteristica": "Saboroso",
+                "detalhes": "Melhor sabor do mercado"
+            },
+            {
+                "caracteristica": "Cremoso",
+                "detalhes": "Composição 100% ao leite, sem utilização de água"
+            },
+            {
+                "caracteristica": "Barato",
+                "detalhes": "Preços acessíveis para todos"
+            },
+            {
+                "caracteristica": "Natural",
+                "detalhes": "Geladinho feito com frutas naturais"
+            }
+        ],
+        "preco": 2.99,
+        "preco_promocional": 2.49
+    },
+    {
+        "id": 6,
+        "imagem": "img/cococomabacaxi.png",
+        "nome": "Coco com Abacaxi",
+        "principal_caracteristica": "Saboroso",
+        "rating": 4.7,
+        "likes": "96%",
+        "reviews": 30,
+        "descricao": "Experimente o melhor geladinho caseiro da fruta, tendo sua composição 100% ao leite e sabor garantido.",
+        "detalhes": [
+            {
+                "caracteristica": "Saboroso",
+                "detalhes": "Melhor sabor do mercado"
+            },
+            {
+                "caracteristica": "Cremoso",
+                "detalhes": "Composição 100% ao leite, sem utilização de água"
+            },
+            {
+                "caracteristica": "Barato",
+                "detalhes": "Preços acessíveis para todos"
+            },
+            {
+                "caracteristica": "Natural",
+                "detalhes": "Geladinho feito com frutas naturais"
+            }
+        ],
+        "preco": 2.99,
+        "preco_promocional": 2.49
     }
 ]

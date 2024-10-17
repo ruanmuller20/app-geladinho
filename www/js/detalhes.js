@@ -36,3 +36,35 @@ if(item){
     console.log('Produto não encontrado: ');
 }
 
+var carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+function adicionarAoCarrinho(item, quantidade){
+    var itemNoCarrinho = carrinho.find(c=> c.item.id === item.id);
+    
+    if(itemNoCarrinho){
+        itemNoCarrinho.quantidade += quantidade;
+        itemNoCarrinho.total_item = itemNoCarrinho.quantidade * item.preco_promocional;
+
+    } else {
+        carrinho.push({
+            item: item,
+            quantidade: quantidade,
+            total_item: quantidade * item.preco_promocional
+        });
+    }
+
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+}
+
+$(".add-cart").on('click', function() {
+    adicionarAoCarrinho(item, 1);
+
+     var toastCenter = app.toast.create({
+        text: `${item.nome} adicionado ao carrinho`,
+        position: 'center',
+        closeTimeout: 2000,
+      });
+
+      toastCenter.open();
+});
