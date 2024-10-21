@@ -54,7 +54,7 @@ fetch('js/backend.json')
 //quantidade de items no carrinho
 
 setTimeout(() => {
-    var carrinho = JSON.parse(localStorage.getItem('carrinho'));
+    var carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
     $('.btn-card').attr('data-count', carrinho.length);
 

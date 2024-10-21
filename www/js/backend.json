@@ -181,7 +181,7 @@
         "preco_promocional": 2.49
     },
     {
-        "id": 6,
+        "id": 7,
         "imagem": "img/milhoverde.png",
         "nome": "Milho Verde",
         "principal_caracteristica": "Saboroso",
@@ -211,7 +211,7 @@
         "preco_promocional": 2.49
     },
     {
-        "id": 6,
+        "id": 8,
         "imagem": "img/cococomabacaxi.png",
         "nome": "Coco com Abacaxi",
         "principal_caracteristica": "Saboroso",
