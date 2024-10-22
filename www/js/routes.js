@@ -32,7 +32,7 @@ var app = new Framework7({
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
-    app.views.main.router.navigate('/carrinho/');
+    app.views.main.router.navigate('/favoritos/');
      $.getScript('js/script.js');
 
     var swiper = new Swiper(".mySwiper", {
@@ -97,7 +97,9 @@ var app = new Framework7({
     {
       path: '/link2/',
       url: 'link2.html',
-      animate: false,
+      options: {
+        transition: 'f7-push',
+      },
 	  on: {
 		pageBeforeIn: function (event, page) {
 		// fazer algo antes da página ser exibida
@@ -114,9 +116,11 @@ var app = new Framework7({
 	  }
     },
     {
-      path: '/link3/',
-      url: 'link3.html',
-      animate: false,
+      path: '/favoritos/',
+      url: 'favoritos.html',
+      options: {
+        transition: 'f7-push',
+      },
 	  on: {
 		pageBeforeIn: function (event, page) {
 		// fazer algo antes da página ser exibida
@@ -126,6 +130,7 @@ var app = new Framework7({
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
+    $.getScript('js/favoritos.js');
 		},
 		pageBeforeRemove: function (event, page) {
 		// fazer algo antes da página ser removida do DOM
@@ -135,7 +140,9 @@ var app = new Framework7({
     {
       path: '/link4/',
       url: 'link4.html',
-      animate: false,
+      options: {
+        transition: 'f7-push',
+      },
 	  on: {
 		pageBeforeIn: function (event, page) {
 		// fazer algo antes da página ser exibida

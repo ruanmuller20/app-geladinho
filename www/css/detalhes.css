@@ -158,3 +158,13 @@ th{
     
 
 }
+
+.btn-favoritos i {
+    color: gray; /* Cor padrão do ícone */
+    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+/* Estilo quando o item é favoritado */
+.btn-favoritos.favoritado i {
+    color: red; /* Cor vermelha para o ícone favoritado */
+}

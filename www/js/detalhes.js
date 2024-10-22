@@ -37,6 +37,7 @@ if(item){
 }
 
 var carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+var favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
 
 function adicionarAoCarrinho(item, quantidade){
     var itemNoCarrinho = carrinho.find(c=> c.item.id === item.id);
@@ -57,14 +58,63 @@ function adicionarAoCarrinho(item, quantidade){
 
 }
 
-$(".add-cart").on('click', function() {
-    adicionarAoCarrinho(item, 1);
 
-     var toastCenter = app.toast.create({
-        text: `${item.nome} adicionado ao carrinho`,
-        position: 'center',
-        closeTimeout: 2000,
-      });
+if (item) {
+    // Renderizar os detalhes do produto (mantido igual)
+    $("#imagem-detalhe").attr('src', item.imagem);
+    $("#nome-detalhe").html(item.nome);
+    //...outros detalhes...
 
-      toastCenter.open();
+    // Verificar se o item já está nos favoritos
+    var itemNoFavoritos = favoritos.find(fav => fav.item.id === item.id);
+    if (itemNoFavoritos) {
+        $(".btn-favoritos").addClass('favoritado');  // Mudar a aparência do botão
+    }
+}
+
+function toggleFavoritos(item) {
+    var itemNoFavoritos = favoritos.find(fav => fav.item.id === item.id);
+    
+    if (itemNoFavoritos) {
+        app.dialog.confirm(
+            "Deseja remover este item dos favoritos?", 
+            '<strong>REMOVER DOS FAVORITOS</strong>',
+            function () {
+                // Se o usuário clicar em "Sim"
+                favoritos = favoritos.filter(fav => fav.item.id !== item.id); // Remover dos favoritos
+                $(".btn-favoritos").removeClass('favoritado');
+                localStorage.setItem('favoritos', JSON.stringify(favoritos)); 
+
+                // Exibir mensagem de "removido dos favoritos"
+                var toastCenter = app.toast.create({
+                    text: `${item.nome} removido dos favoritos`,
+                    position: 'center',
+                    closeTimeout: 2000,
+                });
+                toastCenter.open();
+            },
+            function () {
+                // Se o usuário clicar em "Não", nada acontece
+            }
+        );
+    } else {
+        favoritos.push({
+            item: item,
+            quantidade: 1,
+            total_item: item.preco_promocional
+        });
+        $(".btn-favoritos").addClass('favoritado');
+        localStorage.setItem('favoritos', JSON.stringify(favoritos));
+
+        var toastCenter = app.toast.create({
+            text: `${item.nome} adicionado aos favoritos`,
+            position: 'center',
+            closeTimeout: 2000,
+        });
+        toastCenter.open();
+    }
+}
+
+$(".btn-favoritos").on('click', function() {
+    toggleFavoritos(item);
 });
