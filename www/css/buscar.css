@@ -1,0 +1,91 @@
+/* .item{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 120px;
+    padding: 10px 0px; 
+   
+    margin: auto;
+    border-bottom: 1px solid var(--gelo);
+    
+} */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+.buscar{
+    width: 100%;
+    background: #eee;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+input{
+    width: 75%;
+    height: 20px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px 20px;
+    background: var(--gelo);
+}
+
+#form2{
+    padding-top: 10px;
+    background: var(--gelo);
+    padding-bottom: 20px;
+    position: relative;
+    border-radius: 20px;
+}
+
+#listaProdutos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 70px
+      
+}
+
+#listaProdutos li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border: 1px solid #ddd;
+    background: #f6f6f6;
+    padding: 12px;
+}
+
+#listaProdutos li a:hover{
+    background: #eee;
+}
+
+.item-name{
+    margin-left: 15px;
+}
+
+h1, p{
+    margin-left: 5%;
+}
+
+.view-main {
+    overflow-y: auto; /* Permite a rolagem vertical */
+    height: 100vh; /* Garante que a altura seja 100% da altura da viewport */
+}
+
+.page {
+    overflow-y: auto; /* Permite a rolagem vertical */
+    height: 100%; /* Garante que a altura seja 100% do contêiner pai */
+}

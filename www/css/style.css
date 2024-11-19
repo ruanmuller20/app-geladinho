@@ -135,6 +135,12 @@ form{
     padding: 13px;
 }
 
+#produtos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Espaçamento entre os itens */
+}
+
 .page-content{
     background: var(--branco);
     overflow-y: auto;
