@@ -58,6 +58,17 @@ function adicionarAoCarrinho(item, quantidade){
 
 }
 
+// Adicionar evento de clique ao botão "Adicionar ao Carrinho"
+$(".add-cart").on('click', function() {
+    adicionarAoCarrinho(item, 1); // Adiciona 1 unidade do item ao carrinho
+    var toastCenter = app.toast.create({
+        text: `${item.nome} adicionado ao carrinho`,
+        position: 'center',
+        closeTimeout: 2000,
+    });
+    toastCenter.open();
+});
+
 
 if (item) {
     // Renderizar os detalhes do produto (mantido igual)

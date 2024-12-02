@@ -32,7 +32,7 @@ var app = new Framework7({
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
-    app.views.main.router.navigate('/buscar/');
+    // app.views.main.router.navigate('/buscar/');
      $.getScript('js/script.js');
 
     var swiper = new Swiper(".mySwiper", {
