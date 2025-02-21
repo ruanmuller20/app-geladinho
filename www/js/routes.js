@@ -32,7 +32,7 @@ var app = new Framework7({
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
-    // app.views.main.router.navigate('/buscar/');
+    app.views.main.router.navigate('/login/');
      $.getScript('js/script.js');
 
     var swiper = new Swiper(".mySwiper", {
@@ -208,6 +208,30 @@ var app = new Framework7({
         },
         }
         },
+        {
+          path: '/login/',
+          url: 'login.html',
+          options: {
+            transition: 'f7-push',
+          },
+          on: {
+          pageBeforeIn: function (event, page) {
+          // fazer algo antes da página ser exibida
+          $("#menuPrincipal").hide("fast");
+           
+          },
+          pageAfterIn: function (event, page) {
+          // fazer algo depois da página ser exibida
+          },
+          pageInit: function (event, page) {
+          // fazer algo quando a página for inicializada
+          $.getScript('js/login.js');
+          },
+          pageBeforeRemove: function (event, page) {
+          // fazer algo antes da página ser removida do DOM
+          },
+          }
+          }
   ],
   // ... other parameters
 });

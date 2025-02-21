@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/login.css" />
+    <title>Geladinho da Ilha</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Faça Login</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Usuário" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Senha" />
+            </div>
+            <input type="submit" value="Entrar" class="btn solid" />
+            <p class="social-text">Ou faça login em plataformas sociais</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Criar nova conta</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Usuário" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+                <i class="fa-solid fa-phone"></i>
+                <input type="number" placeholder="Telefone" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Senha" />
+            </div>
+            <input type="submit" class="btn" value="Criar conta" />
+            <p class="social-text">Ou faça login em plataformas sociais</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Novo aqui?</h3>
+            <p>
+              Crie sua conta agora mesmo, e acesse as maravilhas do Geladinho da Ilha.
+            </p>
+            <button class="btn-secund" id="sign-up-btn">
+              Registre-se
+            </button>
+          </div>
+          <img src="img/pessoas.png" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Já tem conta?</h3>
+            <p>
+              Clique no botão abaixo para fazer login.
+            </p>
+            <button class="btn-secund" id="sign-in-btn">
+              Entrar
+            </button>
+          </div>
+          <img src="img/logo2.png" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+   <!-- Path to Framework7 Library Bundle JS-->
+   <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+   <!-- jQuery -->
+   <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+   <!-- Roteamento do app-->
+   <script type="text/javascript" src="js/routes.js"></script>
+   <script src="cordova.js"></script>
+   <script src="js/login.js"></script>
+  </body>
+
+</html>
