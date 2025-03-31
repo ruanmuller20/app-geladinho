@@ -18,13 +18,13 @@
             <h2 class="title">Faça Login</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Usuário" />
+              <input type="text" id="login_email" placeholder="Email" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Senha" />
+              <input type="password" id="login_password" placeholder="Senha" />
             </div>
-            <input type="submit" value="Entrar" class="btn solid" />
+            <input type="button" id="btn_login" value="Entrar" class="btn solid" />
             <p class="social-text">Ou faça login em plataformas sociais</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -41,25 +41,30 @@
               </a>
             </div>
           </form>
+
+
+          
           <form action="#" class="sign-up-form">
             <h2 class="title">Criar nova conta</h2>
             <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Usuário" />
+              <i class="fas fa-envelope"></i>
+              <input type="text" id="name" placeholder="Nome" />
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="text" id="email" placeholder="Email" />
             </div>
             <div class="input-field">
                 <i class="fa-solid fa-phone"></i>
-                <input type="number" placeholder="Telefone" />
+                <input type="text" id="telefone" placeholder="Telefone" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Senha" />
+              <input type="password" id="password" placeholder="Senha" />
             </div>
-            <input type="submit" class="btn" value="Criar conta" />
+            <input type="button" id="criar_conta" class="btn2" value="Criar conta">
+            
+
             <p class="social-text">Ou faça login em plataformas sociais</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -115,6 +120,7 @@
    <script type="text/javascript" src="js/routes.js"></script>
    <script src="cordova.js"></script>
    <script src="js/login.js"></script>
+   <script src="js/cadastro.js"></script>
   </body>
 
 </html>

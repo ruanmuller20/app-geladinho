@@ -1,45 +1,61 @@
-var localFavoritos = localStorage.getItem('favoritos');
-
-if(localFavoritos){
-    var favoritos = JSON.parse(localFavoritos);
-    if(favoritos.length > 0){
-        //tem items no favoritos
-        //renderizar o favoritos
-        renderizarFavoritos();
-        //somar totais dos produtos
-
-    } else {
-        //carrinho vazio
-        favoritosVazio();
-
+$(document).ready(function(){
+    const token = localStorage.getItem('token');
+    if(!token){
+        alert('Usuário não autenticado. Por favor, faça login.');
+        return;
     }
-} else {
-    //carrinho vazio
-    favoritosVazio();
-    
-};
 
-function renderizarFavoritos(){
+    fetch('http://localhost:3333/favoritos2', {
+        method: 'GET',
+        headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Erro na requisição: " + response.status);
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data.length > 0) {
+            renderizarFavoritos(data);
+        } else {
+            favoritosVazio();
+        }
+    })
+    .catch(error => {
+        console.error('Erro na requisição:', error);
+        favoritosVazio();
+    });
+
+
+
+
+});
+
+function renderizarFavoritos(favoritos){
     $("#listaFavoritos").empty();
 
     $.each(favoritos, function(index, itemFavoritos){
         var itemDiv = `
             <div class="item-carrinho" data-index="${index}">
                 <div class="area-img">
-                    <img src="${itemFavoritos.item.imagem}">
+                    <img src="${itemFavoritos.item.image}">
 
                 </div>
                 <div class="area-details">
                     <div class="sup">
                         <span class="name-prod">
-                        ${itemFavoritos.item.nome}
+                        ${itemFavoritos.item.name}
                         </span>
                         <a data-index="${index}" class="delete-item" href="#">
                             <i class="ri-close-line"></i>
                         </a>
                     </div>
                     <div class="middle">
-                        <span>${itemFavoritos.item.principal_caracteristica}</span>
+                        <span>${itemFavoritos.item.description}</span>
                     </div>
 
                     </div>

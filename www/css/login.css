@@ -155,6 +155,21 @@ form.sign-in-form {
   cursor: pointer;
   transition: 0.5s;
 }
+.btn2 {
+  width: 150px;
+  background-color: var(--laranja);
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
 
 .btn-secund{
   width: 130px;
